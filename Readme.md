@@ -62,6 +62,10 @@ The application supports the following operations on features:
     }
 }
 
+#### Read all a Feature
+- **Method**: GET
+- **URL**: `http://localhost:8000/api/v1/features`
+- **Example**: `http://localhost:8000/api/v1/features`
 
 #### Read a Feature
 - **Method**: GET

@@ -1,4 +1,4 @@
-CREATE DATABASE geospatial_data;
+-- CREATE DATABASE geospatial_data;
 
 \c geospatial_data;
 

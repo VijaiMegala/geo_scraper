@@ -8,7 +8,7 @@ conn = psycopg2.connect(
     dbname="geospatial_data",
     user="postgres",
     password="psql369",
-    host="192.168.0.103",
+    host="192.168.0.101",
     port="5431"
 )
 cursor = conn.cursor()
@@ -40,7 +40,7 @@ def ingest_geojson(data):
     conn.commit()
 
 def main():
-    url = 'https://file.notion.so/f/f/9301458a-f465-42d3-80eb-7c09bae15034/282d7ed4-5168-4e77-91be-59906c19f9f3/Map_(10).geojson?table=block&id=655f6883-c12c-4503-bd82-157ea8ee1571&spaceId=9301458a-f465-42d3-80eb-7c09bae15034&expirationTimestamp=1733587200000&signature=MilwqSYc54FNfOJehVEyO4dTud8bNZp9c38l0Fj9mf4&downloadName=karnataka.geojson'
+    url = 'https://file.notion.so/f/f/9301458a-f465-42d3-80eb-7c09bae15034/282d7ed4-5168-4e77-91be-59906c19f9f3/Map_(10).geojson?table=block&id=655f6883-c12c-4503-bd82-157ea8ee1571&spaceId=9301458a-f465-42d3-80eb-7c09bae15034&expirationTimestamp=1734026400000&signature=xfNwIDA8pijPnupHOyd__MQHSw4w3h4S0pWZO8-Pj2w&downloadName=karnataka.geojson'
     geojson_data = fetch_geojson(url)
     ingest_geojson(geojson_data)
 

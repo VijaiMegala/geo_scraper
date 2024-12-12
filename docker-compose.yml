@@ -24,9 +24,9 @@ services:
       DB_USER: postgres
       DB_PASSWORD: psql369
       DB_NAME: geospatial_data
-      DB_HOST: 192.168.0.103 
+      DB_HOST: 192.168.0.101
       DB_PORT: 5431
-      DATABASE_URL: postgres://postgres:psql369@192.168.0.103:5431/geospatial_data
+      DATABASE_URL: postgres://postgres:psql369@192.168.0.101:5431/geospatial_data
     volumes:
       - .:/app
     command: >

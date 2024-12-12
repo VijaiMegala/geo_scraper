@@ -3,7 +3,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y postgis postgresql-15-postgis-3 postgresql-15-postgis-3-scripts
-RUN pip install --no-cache-dir fastapi[all] psycopg2-binary geoalchemy2 uvicorn shapely sqlalchemy requests pydantic
+RUN pip install --no-cache-dir fastapi[all] psycopg2-binary geoalchemy2 uvicorn shapely sqlalchemy requests pydantic 
 
 COPY . /app
 
