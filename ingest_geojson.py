@@ -8,7 +8,7 @@ conn = psycopg2.connect(
     dbname="geospatial_data",
     user="postgres",
     password="psql369",
-    host="192.168.0.101",
+    host="192.168.46.59",
     port="5431"
 )
 cursor = conn.cursor()
